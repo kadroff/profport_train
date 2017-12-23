@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      %th N
+      %th Название
+  %tbody
+    - @competences.each do |competence|
+      %tr
+        %td =competence.id
+        %td = link_to competence.title, competences_path(competence)
