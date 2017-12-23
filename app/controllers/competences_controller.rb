@@ -13,7 +13,7 @@ class CompetencesController < ApplicationController
   end
 
   def create
-    @competence = Competence.create(competence_path)
+    @competence = Competence.new(competence_path)
     redirect_to competences_path(@competence), notice: "Создали компетенцию!"
   end
 
@@ -21,11 +21,13 @@ class CompetencesController < ApplicationController
     redirect_to competences_path(@competence), notice: "Отредактировали компетенцию!"
   end
 
+  # TODO: обработка ошибок
   def update
     @competence = Competence.update(competence_params)
     redirect_to competences_path, notice: "Удалили компетенцию!"
   end
 
+  # TODO: обработка ошибок
   def destroy
     @competence.destroy
     render plain: "Удалили"
