@@ -12,8 +12,23 @@ class CompetencesController < ApplicationController
   end
 
   def create
-    @competence = Competence.create(competences_path)
+    @competence = Competence.create(competence_path)
     render plain: "OK"
+  end
+
+  def edit
+    @competence = Competence.first()
+  end
+
+  def update
+    @competence = Competence.update(competence_params)
+    render plain: "OK"
+  end
+
+  def destroy
+    @competence = Competence.find( params[:id])
+    @competence.destroy
+    render plain: "Удалили"
   end
 
   private

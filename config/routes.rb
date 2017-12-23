@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-
-  resource :competences
+  resources :competences
 end

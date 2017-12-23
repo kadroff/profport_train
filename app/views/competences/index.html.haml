@@ -3,8 +3,12 @@
     %tr
       %th N
       %th Название
+      %th Действия
   %tbody
     - @competences.each do |competence|
       %tr
         %td =competence.id
-        %td = link_to competence.title, competences_path(competence)
+        %td =link_to competence.title, competences_path(competence)
+        %td
+          = link_to 'Редактировать', edit_competence_path(competence)
+          = link_to 'Удалить', competence_path(competence), method: :delete
