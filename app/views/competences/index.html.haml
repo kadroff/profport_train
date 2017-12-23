@@ -11,4 +11,4 @@
         %td =link_to competence.title, competences_path(competence)
         %td
           = link_to 'Редактировать', edit_competence_path(competence)
-          = link_to 'Удалить', competence_path(competence), method: :delete
+          = link_to 'Удалить', competence_path(competence), method: :delete, data: { confirm: "Вы уверены?"}
