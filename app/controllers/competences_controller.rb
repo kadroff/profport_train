@@ -1,10 +1,11 @@
 class CompetencesController < ApplicationController
+  before_action :find_competence, only: [:show, :edit, :update, :destroy]
+
   def index
     @competences = Compentece.all
   end
 
   def show
-    @competence = Competence.first()
   end
 
   def new
@@ -13,20 +14,19 @@ class CompetencesController < ApplicationController
 
   def create
     @competence = Competence.create(competence_path)
-    render plain: "OK"
+    redirect_to competences_path(@competence), notice: "Создали компетенцию!"
   end
 
   def edit
-    @competence = Competence.first()
+    redirect_to competences_path(@competence), notice: "Отредактировали компетенцию!"
   end
 
   def update
     @competence = Competence.update(competence_params)
-    render plain: "OK"
+    redirect_to competences_path, notice: "Удалили компетенцию!"
   end
 
   def destroy
-    @competence = Competence.find( params[:id])
     @competence.destroy
     render plain: "Удалили"
   end
@@ -35,4 +35,8 @@ class CompetencesController < ApplicationController
     def competence_params
       params.require(:competence).permit(:title, :description)
     end
+
+  def find_competence
+    @competence = Competence.first()
+  end
 end

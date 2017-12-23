@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c7b3e8-6103-47b2-9fd7-f0a457eceee7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/competences/edit.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gitflow" afterPath="$PROJECT_DIR$/gitflow" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/competences_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/competences_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/competences/index.html.haml" afterPath="$PROJECT_DIR$/app/views/competences/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/competences/new.html.haml" afterPath="$PROJECT_DIR$/app/views/competences/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -63,8 +58,8 @@
       <file leaf-file-name="competences_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/competences_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="360">
+              <caret line="20" column="72" lean-forward="false" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -360,12 +355,12 @@
       <workItem from="1513936110374" duration="260000" />
       <workItem from="1513936397203" duration="146000" />
       <workItem from="1514019338254" duration="2593000" />
-      <workItem from="1514022543218" duration="3399000" />
+      <workItem from="1514022543218" duration="4224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8188000" />
+    <option name="totallyTimeSpent" value="9013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
@@ -718,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/competences_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="27" lean-forward="false" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="20" column="72" lean-forward="false" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
           <folding />
         </state>
       </provider>
